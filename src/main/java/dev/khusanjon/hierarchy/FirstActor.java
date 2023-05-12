@@ -35,6 +35,6 @@ public class FirstActor extends AbstractBehavior<String> {
 
     private Behavior<String> shutDownYourself() {
         getContext().stop(getContext().getSelf());
-        return this;
+        return Behaviors.stopped();
     }
 }
